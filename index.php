@@ -14,16 +14,20 @@ include "./raccolta.php";
 </head>
 
 <body>
+        <div class="album">
         <!-- ciclo for each per restituire risultato -->
             <?php foreach ($playlist as $item) { ?>
+                <div class="title">
                     <img src="<?php echo $item['poster']; ?>" alt="">
                     <h3> <?php echo $item['title']; ?> </h3>
                     <h4> <?php echo $item['author']; ?> </h4>
                     <h4> <?php echo $item['genre']; ?> </h4>
                     <h4> <?php echo $item['year']; ?> </h4>
+                </div>
 
             <?php } ?>
             </ul>
+        </div>
 </body>
 
 </html>
