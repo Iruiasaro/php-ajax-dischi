@@ -12,14 +12,15 @@
 </head>
 <body>
     <div id="root">
+        <h1>My Playlist_Vue</h1>
         <div class="wrapper">
-            <div v-for="song in playlist">
-                <img :src="song.poster" alt="">
+            <div v-for="song in playlist" class="album">
+            <img :src="song.poster" alt="">
                 <h4>{{song.title}}</h4>
                 <span>{{song.author}}</span>
                 <span>{{song.genre}}</span>
                 <span>{{song.year}}</span>
-            </div>
+            </div>            
         </div>
     </div>
     <script src="scripts/app.js"></script>

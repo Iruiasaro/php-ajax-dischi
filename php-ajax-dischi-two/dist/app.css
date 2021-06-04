@@ -1,4 +1,4 @@
-/* INSERISCE ALBUM TRAMITE VUE */
+/* RESET */
 *{
     box-sizing: border-box;
     padding: 0;
@@ -9,8 +9,30 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+h1 {
+    text-align: center;
+}
+
 img {
     width: 180px;
     height: 180px;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    vertical-align: text-bottom;
+    height: 220px;    
+}
+
+
+.album{
+    background: rgb(0, 0, 0);
+    color: #fff;
+    height: 270px;
+    flex-basis: calc(100% / 3 - 30px);
+    margin: 15px;
+    padding-top: 20px;
 }
 
